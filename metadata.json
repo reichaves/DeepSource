@@ -1,0 +1,5 @@
+{
+  "name": "DeepSource",
+  "description": "A secure, client-side investigative journalism tool for analyzing document connections using Gemini AI.",
+  "requestFramePermissions": []
+}
