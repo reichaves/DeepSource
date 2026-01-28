@@ -64,7 +64,38 @@ This project was created as part of an initiative by **Abraji (Associação Bras
 ### The Prompt
 The application was generated using a natural language prompt emphasizing a secure, offline-first workspace with a specific aesthetic and functional logic:
 
-> *"Build a sophisticated, web-based investigative journalism tool called 'DeepSource'... A secure, offline-first workspace for journalists to upload document sets, visualize hidden connections between entities, and construct timelines..."*
+> *"Build a sophisticated, web-based investigative journalism tool called 'DeepSource'.
+Core Purpose: A secure, offline-first workspace for journalists to upload document sets, visualize hidden connections between entities, and construct timelines.
+Technical Stack:
+Frontend: React (Functional Components with Hooks).
+Styling: Tailwind CSS (Use a 'Cyber-Noir' aesthetic: deep grays, slate blues, and amber accents for data).
+Icons: Lucide-React.
+Data Handling: Client-side processing only (simulated NLP for this prototype).
+User Interface & Layout:
+Left Sidebar (Evidence Locker):
+Upload Zone: Drag-and-drop area for files.
+Entity Filters: Checkboxes to toggle visibility of specific entity types (e.g., 'Show People', 'Hide Locations', 'Show Organizations').
+Export Data: A button to download the current investigation graph as a JSON or CSV file.
+Main Dashboard (The Investigation Board):
+Visual Canvas: Display extracted entities as interactive 'cards' or nodes.
+Smart Linking: Draw lines between entities that appear in the same document.
+Entity Details (Interaction): When a user clicks a node/card, open a floating panel showing:
+Metadata: How many times this name appears.
+Source: Which specific documents contain this entity.
+Linking Options: A button to 'Manually Link' this entity to another.
+Right Sidebar (The Assistant):
+Chat Interface: A conversational UI to query the data.
+'How It Works' Tab: A dedicated tab next to the chat. When clicked, display a detailed documentation view explaining:
+The Workflow: How to upload and analyze.
+The Tech: Explicitly state: 'This app is built using React, Tailwind CSS, and powered by the Gemini 3 Pro model.'
+Privacy: Explain that data remains local to the browser session.
+Bottom Panel (Contextual Timeline):
+Timeline View: A horizontal scrollable timeline.
+Context Enhancement: Do not just show the date. Show the date + the specific sentence/snippet where the date was found (e.g., 'Oct 12, 2023: Meeting arranged with CEO').
+Functional Logic (Simulated for Prototype):
+Since we are running client-side, use simple regex/logic to 'mock' the extraction of names and dates from text input to demonstrate the UI capabilities.
+Ensure the 'Dark Mode' is the default and only theme.
+Please write the complete, functional code for this application in a single file (or structured component blocks) so I can run it immediately."*
 
 ---
 
